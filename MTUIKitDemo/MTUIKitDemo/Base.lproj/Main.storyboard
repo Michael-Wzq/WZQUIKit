@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3Zy-vO-San">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--MTUIKit-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="I62-yF-ryw">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i59-om-jwU">
+                                    <size key="itemSize" width="100" height="70"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="grS-eC-bqi" customClass="MTULineCell">
+                                        <rect key="frame" x="10" y="0.0" width="100" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XE-o1-sbx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.18110318791946309" green="0.55251153523489904" blue="0.77128775167785235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="6XE-o1-sbx" firstAttribute="leading" secondItem="grS-eC-bqi" secondAttribute="leading" id="KNI-Vc-Rq4"/>
+                                            <constraint firstAttribute="bottom" secondItem="6XE-o1-sbx" secondAttribute="bottom" id="dn0-j9-uqU"/>
+                                            <constraint firstAttribute="trailing" secondItem="6XE-o1-sbx" secondAttribute="trailing" id="lUk-Wc-HoI"/>
+                                            <constraint firstItem="6XE-o1-sbx" firstAttribute="top" secondItem="grS-eC-bqi" secondAttribute="top" id="snz-Hh-GTV"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QnH-dM-T9f"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wiI-bb-qqo"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I62-yF-ryw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6p9-UU-88u"/>
+                            <constraint firstItem="I62-yF-ryw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9a9-go-AAQ"/>
+                            <constraint firstAttribute="trailing" secondItem="I62-yF-ryw" secondAttribute="trailing" id="Iqf-8g-ncA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I62-yF-ryw" secondAttribute="bottom" id="Z4T-Vb-Wnh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MTUIKit" id="XHw-ZX-pBj"/>
+                    <connections>
+                        <outlet property="collectionView" destination="I62-yF-ryw" id="XRt-F6-MZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711" y="336"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zYx-VT-2PI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Zy-vO-San" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="nl9-Nl-mhp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2KP-LM-ch3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6I3-wp-xtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-414" y="336"/>
+        </scene>
+    </scenes>
+</document>

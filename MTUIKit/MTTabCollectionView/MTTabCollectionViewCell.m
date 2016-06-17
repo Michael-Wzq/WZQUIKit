@@ -1,14 +1,14 @@
 //
-//  MTCollectionScrollViewCell.m
+//  MTTabCollectionViewCell.m
 //  MTUIKitDemo
 //
 //  Created by zj-db0519 on 16/6/12.
 //  Copyright © 2016年 ph. All rights reserved.
 //
 
-#import "MTCollectionScrollViewCell.h"
+#import "MTTabCollectionViewCell.h"
 
-@implementation MTCollectionScrollViewCell
+@implementation MTTabCollectionViewCell
 - (id)initWithFrame:(CGRect)frame
 {
 	self = [super initWithFrame:frame];

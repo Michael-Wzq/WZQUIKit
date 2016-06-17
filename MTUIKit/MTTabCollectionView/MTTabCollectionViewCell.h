@@ -1,5 +1,5 @@
 //
-//  MTCollectionScrollViewCell.h
+//  MTTabCollectionViewCell.h
 //  MTUIKitDemo
 //
 //  Created by zj-db0519 on 16/6/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MTCollectionScrollViewCell : UICollectionViewCell
+@interface MTTabCollectionViewCell : UICollectionViewCell
 @property (strong, nonatomic) UILabel* label;
 @end
